@@ -1,0 +1,119 @@
+white_color = white
+red_color_dark = #c0392b
+red_color_light = #e74c3c
+blue_color_light = #3498db
+blue_color_dark = #2980b9
+green_color_light = #2ecc71
+green_color_dark = #2cc36b
+
+border-radius()
+	-webkit-border-radius arguments
+	-moz-border-radius arguments
+	border-radius arguments
+
+box-shadow()
+	-webkit-box-shadow arguments
+	-moz-box-shadow arguments
+	box-shadow arguments
+
+filter()
+	-webkit-filter arguments
+	-moz-filter arguments
+	filter arguments
+
+html
+body
+	font-family 'Roboto', sans-serif
+	font-weight 300
+
+p
+	font-size 17px
+
+.navbar-default
+	background-color white_color
+	border-color white_color
+	.navbar-nav
+		li
+			a
+				color black
+				transition 0.1s
+				&:hover
+					transition 0.1s
+					color white_color
+					background-color blue_color_dark
+
+.text-red-dark
+	color red_color_dark
+
+.text-blue-light
+	color blue_color_light
+
+.btn-blue
+	color white_color
+	background-color blue_color_light
+	box-shadow 0px 3px 0px blue_color_dark
+
+.btn-save
+	color white_color
+	background-color green_color_light
+	box-shadow 0px 3px 0px green_color_dark
+
+.btn-blue
+.btn-save
+	color white_color
+	&:hover
+	&:active
+	&:focus
+		color white_color
+	&:active
+		margin-top 3px
+		box-shadow 0px 0px 0px
+		margin-bottom -3px
+
+.main-page
+.contact-page
+	padding 10px
+	width 100%
+	background-size cover
+	margin-bottom 40px
+
+.main-page
+	background url('../img/photo/backgrounds/bg1.jpg') center center
+	min-height 350px
+
+.contact-page
+	background url('../img/photo/backgrounds/bg2.jpg') center center
+	min-height 300px
+
+.red-section
+	margin-top 20px
+	margin-bottom 30px
+	padding 15px 0px 30px 0px
+	color white_color
+	background-color red_color_dark
+
+.text-white
+	color white_color
+
+.img-services
+	width auto
+	height 100px
+
+.main
+	margin-top 90px
+
+.img-gray
+	filter grayscale(70%)
+	transition 0.2s
+	&:hover
+		filter grayscale(0%)
+		transition 0.2s
+
+.footer
+	margin-top 40px
+	width 100%
+	height auto
+	padding 20px
+	color white_color
+	background-color blue_color_dark
+	box-shadow 0px -5px 0px blue_color_light
